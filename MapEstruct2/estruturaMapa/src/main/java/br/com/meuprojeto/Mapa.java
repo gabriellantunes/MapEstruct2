@@ -24,7 +24,7 @@ public class Mapa<K, V> {
 
         if (inicio == null) {
             inicio = novoNo;
-            return null; // Como é a primeira inserção, o valor antigo é nulo.
+            return null;
         }
 
         No atual = inicio;
@@ -45,7 +45,7 @@ public class Mapa<K, V> {
 
         atual.proximo = novoNo;
         novoNo.anterior = atual;
-        return null; // Chave não estava no mapa anteriormente, então o valor antigo é nulo.
+        return null;
     }
 
     public V obter(K chave) {
